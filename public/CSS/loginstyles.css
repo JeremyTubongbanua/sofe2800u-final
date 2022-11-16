@@ -25,24 +25,28 @@ h1 {
     width: 364px;
     border-style: solid;
     box-shadow: 5px 10px gray;
+    text-align: center;
+    justify-content: center;
 }
 
 .container input,button {
 	width: 60%;
 	height: 20px;
 	background: white;
-	justify-content: center;
 	display: flex;
 	margin: 20px auto;
-	padding: 10px;
+	padding: 20px;
 	border: none;
 	outline: none;
-	border-radius: 5px;
 }
 
-
+.container button{
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    
+}
 
 a {
-	padding: 10px;
 	width: 55%;
 }
