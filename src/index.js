@@ -1,5 +1,7 @@
+const express = require("express");
 
+const app = express();
+const port = 3000;
 
-const express = require('express');
-
-// todo initialize express server
+app.use(express.static('public'))
+app.listen(port);
