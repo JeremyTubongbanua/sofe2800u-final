@@ -7,7 +7,7 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Kosugi', sans-serif;
-	background: white;
+	background: #F4F5F1;
 }
 
 h1 {
@@ -47,11 +47,11 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #DAF0EE;    
+    background-color: white;    
 }
-
-
 
 a {
 	width: 55%;
+    text-decoration: none;
+    color: black;
 }

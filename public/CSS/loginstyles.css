@@ -7,7 +7,7 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Kosugi', sans-serif;
-	background: white;
+	background: #F4F5F1;
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
 .container input,button {
 	width: 60%;
 	height: 20px;
-	background: white;
+	background: White;
 	display: flex;
 	margin: 25px auto;
 	padding: 20px;
@@ -41,14 +41,13 @@ h1 {
 
 }
 
-<<<<<<< HEAD
 .container button{
     padding: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
     text-align: center;
-	background-color: #DAF0EE
+	background-color: white;
     
 }
 
@@ -57,9 +56,6 @@ h1 {
 	margin-bottom: 40px;
 }
 
-a {
-	width: 55%;
-=======
 .login_form_form{
 	margin-bottom: 70px;
 }
@@ -75,5 +71,4 @@ button{
 a{
 	color: inherit;
 	text-decoration: none;
->>>>>>> 07590bc04843525bd6a13edb1d5376c4dc7c858b
 }
