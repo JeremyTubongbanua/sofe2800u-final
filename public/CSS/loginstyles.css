@@ -34,13 +34,14 @@ h1 {
 	height: 20px;
 	background: white;
 	display: flex;
-	margin: 20px auto;
+	margin: 25px auto;
 	padding: 20px;
 	border: none;
 	outline: none;
 
 }
 
+<<<<<<< HEAD
 .container button{
     padding: 20px;
 	display: flex;
@@ -58,4 +59,21 @@ h1 {
 
 a {
 	width: 55%;
+=======
+.login_form_form{
+	margin-bottom: 70px;
+}
+
+button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor:pointer;
+	width: 71%;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+>>>>>>> 07590bc04843525bd6a13edb1d5376c4dc7c858b
 }

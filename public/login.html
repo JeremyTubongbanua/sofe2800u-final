@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="CSS/loginstyles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Kosugi"
-    />
-  </head>
 
+<<<<<<< HEAD
   <body>
     <form id="Loginform" method="post">
       <h1>SUPERCOOLJOBS.COM</h1>
@@ -27,7 +20,32 @@
           </button>
         </div>
         <a href="signup.html">Don't have an account? Sign up HERE</a>
+=======
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="CSS/loginstyles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi" />
+</head>
+
+<body>
+  <form id="Loginform" method="post">
+    <h1>SUPERCOOLJOBS.COM</h1>
+    <div class="container">
+      <div class="login_form_form">
+        <form action="includes/login.inc.php" method="post">
+          <input type="text" name="name" placeholder="Username" />
+          <input type="text" name="pwd" placeholder="Password" />
+        </form>
+>>>>>>> 07590bc04843525bd6a13edb1d5376c4dc7c858b
       </div>
-    </form>
-  </body>
+      <div class="buttons">
+        <button type="submit" name="employeelogin">Log in as Employee</button>
+        <p>OR</p>
+        <button type="submit" name="employerlogin">Log in as Employer</button>
+        <P>Don't have an account? Sign up <a href=" INSERT HERE " id="clicksignup">HERE</a></P>
+      </div>
+    </div>
+  </form>
+</body>
+
 </html>
