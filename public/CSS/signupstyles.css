@@ -21,7 +21,7 @@ h1 {
 
 .container{
     background-color: #94D1BE;
-    height: 445px;
+    height: 600px;
     width: 364px;
     border-style: solid;
     box-shadow: 5px 10px gray;
@@ -31,30 +31,26 @@ h1 {
 
 .container input,button {
 	width: 60%;
-	height: 20px;
+	height: 5px;
 	background: white;
 	display: flex;
 	margin: 20px auto;
 	padding: 20px;
 	border: none;
 	outline: none;
-
 }
 
 .container button{
     padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-	background-color: #DAF0EE
-    
+    background-color: #DAF0EE;    
 }
 
-#buttons{
-    margin-top: 50px;
-	margin-bottom: 40px;
-}
+
 
 a {
 	width: 55%;

@@ -14,17 +14,19 @@
       <h1>SUPERCOOLJOBS.COM</h1>
       <div class="container">
         <div class="login_form_form">
-          <form action="includes/login.inc.php" method="post">
+          <form method="post">
             <input type="text" name="name" placeholder="Username" />
             <input type="text" name="pwd" placeholder="Password" />
           </form>
         </div>
-        <button type="submit" name="submit">Log in as Employee</button>
-        <p>OR</p>
-        <button type="submit" name="submit">Log in as Employee</button>
-        <a href="signup.php" id="fakebutton"
-          >Don't have an account? Sign up HERE</a
-        >
+        <div id="buttons">
+          <button type="submit" name="submit">Log in as Employee</button>
+          <p>OR</p>
+          <button type="submit" name="submit" id="button2">
+            Log in as Employee
+          </button>
+        </div>
+        <a href="signup.html">Don't have an account? Sign up HERE</a>
       </div>
     </form>
   </body>
