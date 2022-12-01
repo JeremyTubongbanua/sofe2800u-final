@@ -7,4 +7,6 @@
 
 ```
 npm i express
+npm i mongodb
+npm i dotenv
 ```
