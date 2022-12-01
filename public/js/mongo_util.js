@@ -39,4 +39,4 @@ const insertUser = async (db, username, password) => {
   return await insertDoc(collection, doc);
 }
 
-module.exports = {generateDb, insertDoc};
+module.exports = {generateDb, insertDoc, insertUser};
