@@ -1,0 +1,463 @@
+body {
+    background-image: url('/public/assets/Background.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 330vh;
+  }
+  
+  
+  #relatedtobusiness {
+    padding: 25%;
+    margin-top: 13%;
+  }
+  
+  
+  #navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #3B413C;
+  }
+  
+  #Maintextbox {
+    width: 1400px;
+    padding: 60px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #94D1BE;
+    border-radius: 30px;
+    font-family: 'Kosugi', sans-serif;
+    text-align: center;
+  }
+  
+  #maintextboxtitle {
+    font-size: 40px;
+  }
+  
+  #paragraphbox {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox2 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox3 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 140%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox4 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 170%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox5 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 200%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox6 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 230%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox7 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 260%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox8 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 290%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  #paragraphbox9 {
+    width: 50%;
+    padding: 70px;
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    top: 320%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .business {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
+  
+  #creators {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    text-align: center;
+    font-size: small;
+    height: 3%;
+  }
+  
+  .inboxtext {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 400px;
+    font-size: medium;
+  }
+  
+  .inboxtext2 {
+    position: absolute;
+    top: 46%;
+    left: 30%;
+    width: 400px;
+    font-size: small;
+  }
+  
+  .inboxtext3 {
+    position: absolute;
+    top: 57%;
+    left: 30%;
+    width: 400px;
+    font-size: small;
+  }
+  
+  #title {
+    font-family: 'Kosugi', sans-serif;
+    font-size: 20-px;
+    color: aliceblue;
+  }
+  
+  .picturebox {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/Emp1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .picturebox2 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .picturebox3 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .picturebox4 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .picturebox5 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .picturebox6 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .picturebox7 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp7.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .picturebox8 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp8.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .picturebox9 {
+    width: 10%;
+    padding: 60px;
+    left: 13%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid black;
+    align-items: center;
+    background-image: url('/public/assets/emp9.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .nav-link {
+    letter-spacing: 0.1em;
+    margin-left: 200px;
+    color: #259D92;
+  }
+  
+  .nav-link li:hover {
+    color: white;
+  }
+  
+  ul.navbar-nav a:hover {
+    color: #fff !important;
+  }
+  
+  .form-group {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    padding: 14%;
+    top: 6%;
+    left: 26%;
+  }
+  
+  input[type="Search"]::-webkit-input-placeholder {
+    -webkit-transition: opacity 0.3s linear;
+    color: grey;
+    font-family: 'Kosugi', sans-serif;
+  }
+  
+  input[type="Search"]:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+  
+  .font-class {
+    font-family: 'Kosugi', sans-serif;
+  }
+  
+  .font-class2 {
+    font-family: 'Kosugi', sans-serif;
+    color: black;
+  }
+  
+  #filtertitle {
+    position: absolute;
+    top: 350px;
+    left: 60px;
+  }
+  
+  #filter {
+    position: absolute;
+    top: 400px;
+    left: 60px;
+  }
+  
+  /* Customize the label (the container) */
+  .containercheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .containercheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 30%;
+    border: 0.5px solid black;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .containercheck:hover input~.checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .containercheck input:checked~.checkmark {
+    background-color: #2196F3;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 13.5%;
+    right: 1%;
+  }
