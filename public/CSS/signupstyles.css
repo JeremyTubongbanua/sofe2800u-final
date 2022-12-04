@@ -55,3 +55,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.cursor_hover {
+    cursor: pointer;
+}

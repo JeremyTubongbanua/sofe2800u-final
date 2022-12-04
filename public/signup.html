@@ -5,30 +5,31 @@
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="CSS/signupstyles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi" />
+    <script type="text/javascript" src="./js/signup_action.js"></script>
 </head>
 
 <body>
-    <form id="signupform" method="post">
+    <div id="signupform" >
         <h1>SUPERCOOLJOBS.COM</h1>
         <div class="container">
             <div class="signup_form_form">
-                <form method="post">
-                    <input type="text" name="firstName" placeholder="First Name" />
-                    <input type="text" name="lastName" placeholder="Last Name" />
-                    <input type="text" name="email" placeholder="Email" />
-                    <input type="text" name="username" placeholder="Username" />
-                    <input type="text" name="pwd" placeholder="Password" />
-                    <input type="text" name="pwdRepeat" placeholder="Repeat Password" />
-                </form>
+                <div>
+                    <input value="123" id="firstName" type="text" placeholder="First Name" />
+                    <input value="123" id="lastName" type="text" placeholder="Last Name" />
+                    <input value="123" id="email" type="text" placeholder="Email" />
+                    <input value="123" id="username" type="text" placeholder="Username" />
+                    <input value="123" id="password" type="text" placeholder="Password" />
+                    <input value="123" id="passwordRepeat" type="text" placeholder="Repeat Password" />
+                </div>
             </div>
             <div>
-                <button type="submit" name="submit">Sign Up as Employer</button>
+                <button class="cursor_hover" onclick="onSignUpEmployer()">Sign Up as Employer</button>
                 <p>OR</p>
-                <button type="submit" name="submit">Sign Up as Employee</button>
+                <button class="cursor_hover" onclick="onSignUpEmployee()">Sign Up as Employee</button>
                 <a href="login.html" id="fakebutton">Login HERE</a>
             </div>
         </div>
-    </form>
+    </div>
 </body>
 
 </html>
