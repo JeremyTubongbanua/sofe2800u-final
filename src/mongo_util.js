@@ -25,6 +25,26 @@ const insertDoc = async (collection, doc) => {
 
 const exists = async (collection, query) => {
   const result = await collection.findOne(query);
+  console.log('query: ' + JSON.stringify(query) + ' ' + 'result: ' + JSON.stringify(result));
+  return result != null;
+};
+
+const updateOne = async (collection, query, newValues) => {
+  const nv = {
+    $set: newValues,
+  }
+  const result = await collection.updateOne(query, nv, (err, res) => {
+    if (err) {
+      console.log(
+        "Error found when trying updating to update one with query: " +
+          query +
+          " and newValues: " +
+          newValues
+      );
+      console.log(err);
+    }
+    console.log(res);
+  });
   return result;
 };
 
@@ -65,13 +85,26 @@ const userExistsWithPassword = async (username, password) => {
   return await exists(collection, query);
 };
 
+// returns true/false if the login was successful
 const login = async (username, password, sessionId) => {
   const client = await generateDb();
-  const db = client.db("SOFE2800U");
-  const collection = db.collection("users");
   if (await userExistsWithPassword(username, password)) {
-    const doc = { username, sessionId };
+    const db = client.db("SOFE2800U");
+    const collection = db.collection("sessions");
+    // 2 days
+    const timeExpiry = (Date.now() + 2 * 24 * 60 * 60 * 1000); 
+    const doc = { username, sessionId, timeExpiry };
+    if(!(await sessionExists(username))) {
+      console.log("inserting session");
+      await insertDoc(collection, doc);
+    } else {
+      console.log("updating session");
+      const query = { username };
+      await updateOne(collection, query, doc);
+    }
+    return true;
   }
+  return false;
 };
 
 const sessionExists = async (username) => {
@@ -82,10 +115,18 @@ const sessionExists = async (username) => {
   return await exists(collection, query);
 };
 
+const getSession = async (username) => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("sessions");
+  return await collection.findOne({ username });
+}
+
 module.exports = {
   insertUser,
   userExists,
   userExistsWithPassword,
   login,
   sessionExists,
+  getSession,
 };

@@ -5,26 +5,25 @@
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="CSS/loginstyles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi" />
+  <script src="./js/login_action.js"></script>
 </head>
 
 <body>
-  <form id="Loginform" method="post">
+  <div id="Loginform">
     <h1>SUPERCOOLJOBS.COM</h1>
     <div class="container">
       <div class="login_form_form">
-        <form action="includes/login.inc.php" method="post">
-          <input type="text" name="name" placeholder="Username" />
-          <input type="text" name="pwd" placeholder="Password" />
-        </form>
+        <div action="includes/login.inc.php" method="post">
+          <input type="text" id="username" placeholder="Username" value="123" />
+          <input type="text" id="password" placeholder="Password" value="123" />
+        </div>
       </div>
       <div class="buttons">
-        <button type="submit" name="employeelogin">Log in as Employee</button>
-        <p>OR</p>
-        <button type="submit" name="employerlogin">Log in as Employer</button>
+        <button onclick="onLoginClick()" name="employeelogin">Log in as Employee</button>
         <P>Don't have an account? Sign up <a href="signup.html" id="clicksignup">HERE</a></P>
       </div>
     </div>
-  </form>
+  </div>
 </body>
 
 </html>
