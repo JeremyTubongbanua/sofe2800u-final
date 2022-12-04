@@ -29,24 +29,21 @@ async function signUpUser(type) {
     alert("Passwords do not match!");
     return;
   }
-  const utf8Encode = new TextEncoder();
-  password = utf8Encode.encode(hash);
 
-  crypto.subtle.digest("SHA-256", password).then(() => {
-    const data = {
-      username,
-      password: hash,
-      email,
-      firstName,
-      lastName,
-      type,
-    };
-    fetch("/insert/user", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    }).then((res) => {
-      console.log("Request complete! response:", res);
-    });
+  const data = {
+    username,
+    password,
+    email,
+    firstName,
+    lastName,
+    type,
+  };
+
+  fetch("/insert/user", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  }).then((res) => {
+    console.log("Request complete! response:", res);
   });
 }
