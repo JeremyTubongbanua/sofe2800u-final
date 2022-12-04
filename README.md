@@ -1,12 +1,21 @@
-
-
 # sofe2800u-final
 
+# Run
 
-# npm packages
+First, run npm install:
 
 ```
-npm i express
-npm i mongodb
-npm i dotenv
+npm install
+```
+
+Run the express server with:
+
+```
+npm run start
+```
+
+Then go to this link on your browser:
+
+```
+http://localhost:3000
 ```
