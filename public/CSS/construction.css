@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    min-height: 100vh;
+	font-family: 'Kosugi', sans-serif;
+	background: #F4F5F1;
+}
+
+h1 {
+    text-align: center;
+    margin:0 auto;
+    margin-bottom: 70px;
+    font-size: 40px;
+    color: black;
+}
+
+p{
+    font-size: 20px;
+    color: black;
+    font-family: 'Kosugi', sans-serif;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+}
+

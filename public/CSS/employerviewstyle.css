@@ -347,7 +347,7 @@ body {
 
 .nav-link {
   letter-spacing: 0.1em;
-  margin-left: 200px;
+  margin-left: 20px;
   color: #259d92;
 }
 
@@ -453,4 +453,5 @@ input[type="Search"]:focus::-webkit-input-placeholder {
   position: absolute;
   top: 13.5%;
   right: 1%;
+  z-index: 100000000000000000000;
 }
