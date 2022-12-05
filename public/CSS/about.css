@@ -2,30 +2,6 @@ body {
     background-color: white;
     font-family: 'Kosugi', sans-serif;
   }
-  
-  #menu {
-    list-style-type: none;
-    position: relative;
-    overflow: hidden;
-    background-color: #333;
-    margin: 0;
-  }
-  
-  #menu > li {
-    float: left;
-  }
-  
-  #menu > li > a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  #menu > li > a:hover {
-    background-color: #111;
-  }
     
   #aboutUs{
     display: flex;
@@ -56,14 +32,3 @@ body {
 
     font-size: 10px;
   }
-  
-  img{
-    border-radius: 50%;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  
