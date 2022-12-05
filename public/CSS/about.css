@@ -28,14 +28,3 @@ body {
   #aboutUs  > p{
     font-size: 10px;
   }
-  
-  img{
-    border-radius: 50%;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  
