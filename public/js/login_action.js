@@ -46,9 +46,10 @@ const sendLoginRequest = async (username, password) => {
   const body = await res.json();
   // console.log('sent login request and got: ' + JSON.stringify(body));
   if (body["success"]) {
-    window.location.href = "http://localhost:3000/employee_index.html";
+    return true;
   } else {
     alert("Wrong password!");
+    return false;
   }
 };
 
