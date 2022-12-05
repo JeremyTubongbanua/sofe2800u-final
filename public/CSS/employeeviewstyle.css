@@ -352,10 +352,14 @@ body {
   }
   
   
-  .nav-link {
+  .nav-link{
     letter-spacing: 0.1em;
     margin-left: 20px;
     color: #259D92;
+  }
+
+  .navbar-nav{
+    margin-left: 20px;
   }
   
   .nav-link li:hover {
