@@ -143,6 +143,14 @@ const getUserWithSessionId = async (sessionId) => {
   return user;
 }
 
+const getJobs = async () => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("jobs");
+  const jobs =  await collection.find({}).toArray();
+  return jobs;
+}
+
 module.exports = {
   insertUser,
   userExists,
@@ -151,5 +159,6 @@ module.exports = {
   sessionExists,
   getSession,
   getUserWithUsername,
-  getUserWithSessionId
+  getUserWithSessionId,
+  getJobs,
 };

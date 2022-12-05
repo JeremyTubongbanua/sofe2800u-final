@@ -64,6 +64,11 @@ const initializeWebServer = () => {
       sessionId: await mongoUtil.getSession(username),
     });
   });
+
+  app.post("/get/jobs", async (req,res) => {
+    const jobs = await mongoUtil.getJobs();
+    res.send(jobs);
+  });
 };
 
 initializeWebServer();
