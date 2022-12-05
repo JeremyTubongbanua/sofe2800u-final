@@ -24,7 +24,7 @@ h1 {
     height: 300px;
     width: 364px;
     border-style: solid;
-    box-shadow: 5px 10px gray;
+    box-shadow: 10px 10px gray;
     text-align: center;
     justify-content: center;
 }
