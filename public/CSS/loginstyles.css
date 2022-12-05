@@ -21,7 +21,7 @@ h1 {
 
 .container{
     background-color: #94D1BE;
-    height: 445px;
+    height: 300px;
     width: 364px;
     border-style: solid;
     box-shadow: 5px 10px gray;
@@ -58,7 +58,7 @@ h1 {
 
 .login_form_form{
 	margin-top: 15px;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 }
 
 button{
