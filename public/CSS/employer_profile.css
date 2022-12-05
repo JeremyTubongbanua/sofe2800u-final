@@ -1,0 +1,44 @@
+body {
+  background-color: white;
+  font-family: 'Kosugi', sans-serif;
+  height: 100vh;
+}
+  
+#profileBox{
+  display: flex;
+  flex-direction: column;
+    background-color: white;
+    margin-top: 60px;
+    padding-bottom: 0;
+}
+
+
+#profileBox > div{
+    background-color: #94D1BE;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 70px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#profileBox > div > h2{
+  text-align: center;
+}
+
+#profileBox  > p{
+  font-size: 10px;
+}
+
+#profileBox > div > ul > li{
+    list-style-type: none;
+}
+
+img{
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
