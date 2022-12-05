@@ -69,6 +69,15 @@ const insertUser = async (
   return await insertDoc(collection, doc);
 };
 
+const editUser = async (username, password, email, firstName, lastName, type) => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("users");
+  const query = { username };
+  const newValues = { username, password, email, firstName, lastName, type };
+  return await updateOne(collection, query, newValues);
+}
+
 const userExists = async (username) => {
   const client = await generateDb();
   const db = client.db("SOFE2800U");
@@ -151,6 +160,22 @@ const getJobs = async () => {
   return jobs;
 }
 
+const insertNewJob = async (name, organization, location, qualification, imageUrl) => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("jobs");
+  const doc = { name, organization, location, qualification, imageUrl };
+  return await insertDoc(collection, doc);
+}
+
+const getUsers = async () => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("users");
+  const users =  await collection.find({}).toArray();
+  return users;
+}
+
 module.exports = {
   insertUser,
   userExists,
@@ -161,4 +186,7 @@ module.exports = {
   getUserWithUsername,
   getUserWithSessionId,
   getJobs,
+  editUser,
+  insertNewJob,
+  getUsers,
 };

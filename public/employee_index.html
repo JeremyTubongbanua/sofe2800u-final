@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<head>index_action.js"></script>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="/public/CSS/employeeviewstyle.css">
 		<title>SUPERCOOLJOBS</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/employeeviewstyle.css">
+		<script src="./js/employee_index_action.js"></script>
 	</head>
 	<body>
 		<nav id="navbar" class="navbar navbar-expand-lg">
@@ -17,14 +18,15 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav">
-					<a class="nav-link" href="about.html">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="employee_profile.html">Your Profile</a>
-					</li>
-					<a class="navbar-brand" href="employee_profile.html">
-						<img class="img-responsive" width="130px" height="" alt="" src="https://cdn.discordapp.com/attachments/1036390218925883442/1049202261290651699/1250689_1.png">
-					</a>
+					<li class="nav-item"> <a class="nav-link" href="about.html">About Us</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="create_job.html">Post a job</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="employee_index.html">View Employees</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="employer_index.html">View Employers</a> </li>
+                <li>
+                    <a class="navbar-brand" href="#">
+                        <img class="img-responsive" width="130px" height="" alt="" src="https://cdn.discordapp.com/attachments/1036390218925883442/1049202261290651699/1250689_1.png">
+                    </a>
+                </li>
 			</div>
 			</li>
 			</ul>
@@ -42,7 +44,9 @@
 			<div id="relatedtobusiness" class="font-class">
 				<h3 style="font-weight: bold; text-align: center;"> Employees Related to Your Business </h3>
 			</div>
-			<a class="font-class2" href="#">
+			<div id="list">
+
+			<!-- <a class="font-class2" href="#">
 				<div id="paragraphbox">
 					<div class="picturebox"></div>
 					<h3 class="business" class="font-class"> Google </h3>
@@ -170,7 +174,8 @@
 						<a style="font-weight: bold;">About:</a> 4 Years of Experience as a Reasearch Assistant at University of Toronto
 					</p>
 				</div>
-			</a>
+			</a> -->
+			</div>
 			<div id="filtertitle">
 				<p class="font-class">Location</p>
 			</div>

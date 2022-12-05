@@ -53,6 +53,16 @@ const sendLoginRequest = async (username, password) => {
   }
 };
 
+const loadUser = async (username) => {
+  const res = await fetch("/get/user/username", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username }),
+  })
+  const body = await res.json();
+  return body;
+}
+
 const onLoginClick = async () => {
   let username, password;
   try {
@@ -66,6 +76,15 @@ const onLoginClick = async () => {
   if (uExists) {
     alert("Logging in...");
     await sendLoginRequest(username, password);
+
+    const user = await loadUser(username);
+    if(user['type'] == 'EMPLOYER') {
+      document.location.href = "employee_index.html";
+    } else if (user['type'] == 'EMPLOYEE') {
+      document.location.href = "employer_index.html";
+    } else {
+      alert('User type not recognized: ' + user['type']);
+    }
   } else {
     alert("Username dose not exist... Sign up first!");
     return;

@@ -10,8 +10,28 @@ const loadJobs = async () => {
   return body;
 };
 
+const initializeCheckboxes = () => {
+
+    const canadaCheckbox = document.getElementById("canadaCheckbox");
+    const usCheckbox = document.getElementById("us-checkbox");
+
+    const softwareEngineeringCheckbox = document.getElementById("softwareengineering-checkbox");
+    const mechanicalEngineeringCheckbox = document.getElementById("mechanicalengineering-checkbox");
+    const chemicalEngineeringCheckbox = document.getElementById("chemicalengineering-checkbox");
+    const financeCheckbox = document.getElementById("finance-checkbox");
+    const accountingCheckbox = document.getElementById("accounting-checkbox");
+    const economicsCheckbox = document.getElementById("economics-checkbox");
+
+    canadaCheckbox.addEventListener("change", (e) => {
+        console.log(e);
+    });
+};
+
+// initializeCheckboxes();
+
 loadJobs().then((jobs) => {
   const div = document.getElementById("list");
+  console.log(jobs.length)
   for (let i = 0; i < jobs.length; i++) {
     let name, organization, location, qualification;
     name = jobs[i].name;
@@ -25,7 +45,8 @@ loadJobs().then((jobs) => {
     aOuter.href = "#";
 
     const divOuter = document.createElement("div");
-    divOuter.id = "paragraphbox";
+    divOuter.classList.add("paragraphbox");
+	divOuter.style.top = (50 + (i+1)*30) + `%`;
 
     const divOuter2 = document.createElement("div");
     divOuter2.classList.add('picturebox');

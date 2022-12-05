@@ -69,6 +69,25 @@ const initializeWebServer = () => {
     const jobs = await mongoUtil.getJobs();
     res.send(jobs);
   });
+
+  app.post('/edit/user', async (req, res) => {
+    const { username, email, password, firstName, lastName, type } = req.body;
+    const result = await mongoUtil.editUser(username, password, email, firstName, lastName, type);
+    const success = result != null;
+    res.send({success});
+  });
+
+  app.post('/insert/job', async (req, res) => {
+    const {name, organization, location, qualification, imageUrl} = req.body;
+    const result = await mongoUtil.insertNewJob(name, organization, location, qualification, imageUrl);
+    const success = result != null;
+    res.send({success}); // {success: true}
+  });
+
+  app.post('/get/users', async (req, res) => {
+    const users = await mongoUtil.getUsers();
+    res.send(users);
+  })
 };
 
 initializeWebServer();
