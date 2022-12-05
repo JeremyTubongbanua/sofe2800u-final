@@ -1,0 +1,68 @@
+body {
+  background-color: white;
+  font-family: 'Kosugi', sans-serif;
+}
+
+#menu {
+  list-style-type: none;
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  margin: 0;
+}
+
+#menu > li {
+  float: left;
+}
+
+#menu > li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu > li > a:hover {
+  background-color: #111;
+}
+  
+#profileBox{
+  display: flex;
+  flex-direction: column;
+    background-color: white;
+    margin-top: 60px;
+    padding-bottom: 0;
+}
+
+
+#profileBox > div{
+    background-color: #94D1BE;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 70px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#profileBox > div > h2{
+  text-align: center;
+}
+
+#profileBox  > p{
+  font-size: 10px;
+}
+
+#profileBox > div > ul > li{
+    list-style-type: none;
+}
+
+img{
+  border-radius: 50%;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

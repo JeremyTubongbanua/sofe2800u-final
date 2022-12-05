@@ -9,6 +9,7 @@
     <title>SUPERCOOLJOBS</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kosugi" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="./js/employer_index_action.js"></script>
 </head>
 
 <body>
@@ -46,70 +47,73 @@
         </form>
         <div id="relatedtobusiness" class="font-class">
             <h3 style="font-weight: bold; text-align: center;"> Employees Related to Your Business </h3>
-        </div> <a class="font-class2" href="#">
-            <div id="paragraphbox">
-                <div class="picturebox">
+        </div> 
+        <div id="list">
+            <!-- <a class="font-class2" href="#">
+                <div id="paragraphbox">
+                    <div class="picturebox">
+                    </div>
+                    <h3 class="business" class="font-class"> Harold Bell </h3>
+                    <p class="inboxtext"> School: Ontario Tech University, Game Design </p>
+                    <p class="inboxtext2"> Country: Canada </p>
+                    <p class="inboxtext3"> Main Qualification: 2 Years of Experience in Web Design at Google </p>
                 </div>
-                <h3 class="business" class="font-class"> Harold Bell </h3>
-                <p class="inboxtext"> School: Ontario Tech University, Game Design </p>
-                <p class="inboxtext2"> Country: Canada </p>
-                <p class="inboxtext3"> Main Qualification: 2 Years of Experience in Web Design at Google </p>
-            </div>
-        </a> <a class="font-class2" href="#">
-            <div id="paragraphbox2">
-                <div class="picturebox2"> </div>
-                <h3 class="business" class="font-class"> Martin Lopez </h3>
-                <p class="inboxtext"> School: University of Toronto, Software Engineering </p>
-                <p class="inboxtext2"> Country: Canada </p>
-                <p class="inboxtext3"> Main Qualification: 3 Years of Experience in Cloud Computing at Facebook </p>
-            </div>
-        </a> <a class="font-class2" href="#">
-            <div id="paragraphbox6" class="font-class">
-                <div class="picturebox6"></div>
-                <h3 class="business"> Eric Jenkins </h3>
-                <p class="inboxtext"> School: Ontario Tech University, Commerce </p>
-                <p class="inboxtext2"> Country: U.S </p>
-                <p class="inboxtext3"> Main Qualification: 3 Years of Experience in Commercial Banking at Bank of
-                    America </p>
-            </div>
-        </a> <a class="font-class2" href="#">
-            <div id="paragraphbox4" class="font-class">
-                <div class="picturebox4"></div>
-                <h3 class="business"> Philip Cooper </h3>
-                <p class="inboxtext"> School: Ryerson University, Computer Engineering </p>
-                <p class="inboxtext2"> Country: Canada </p>
-                <p class="inboxtext3"> Main Qualification: 4 Years of Experience in Mobile Software Design at Apple</p>
-            </div>
-        </a>
-
-        <a class="font-class2" href="#">
-            <div id="paragraphbox5" class="font-class">
-                <div class="picturebox5"></div>
-                <h3 class="business"> Gerald Richardson </h3>
-                <p class="inboxtext"> School: Ontario Tech University, Mechanical Engineering</p>
-                <p class="inboxtext2"> Country: Canada </p>
-                <p class="inboxtext3"> Main Qualification: 12 month internship as a Design Engineer at Toyota </p>
-            </div>
-        </a>
-        <a class="font-class2" href="#">
-            <div id="paragraphbox3" class="font-class">
-                <div class="picturebox3"></div>
-                <h3 class="business"> Larry Butler </h3>
-                <p class="inboxtext"> School: Ontario Tech University, Software Engineering </p>
-                <p class="inboxtext2"> Country: Canada </p>
-                <p class="inboxtext3"> Main Qualification: 6 months as a Software Engineer at Shopify </p>
-            </div>
-        </a>
-        <a class="font-class2" href="#">
-            <div id="paragraphbox7" class="font-class">
-                <div class="picturebox7"></div>
-                <h3 class="business"> Jeremy Ross </h3>
-                <p class="inboxtext"> School: M.I.T, Computer Science</p>
-                <p class="inboxtext2"> Country: US </p>
-                <p class="inboxtext3"> Main Qualification: 4 Years as a Software Engineer at Netflix </p>
-            </div>
-        </a>
-        <a class="font-class2" href="#">
+            </a> 
+            <a class="font-class2" href="#">
+                <div id="paragraphbox2">
+                    <div class="picturebox2"> </div>
+                    <h3 class="business" class="font-class"> Martin Lopez </h3>
+                    <p class="inboxtext"> School: University of Toronto, Software Engineering </p>
+                    <p class="inboxtext2"> Country: Canada </p>
+                    <p class="inboxtext3"> Main Qualification: 3 Years of Experience in Cloud Computing at Facebook </p>
+                </div>
+            </a> <a class="font-class2" href="#">
+                <div id="paragraphbox6" class="font-class">
+                    <div class="picturebox6"></div>
+                    <h3 class="business"> Eric Jenkins </h3>
+                    <p class="inboxtext"> School: Ontario Tech University, Commerce </p>
+                    <p class="inboxtext2"> Country: U.S </p>
+                    <p class="inboxtext3"> Main Qualification: 3 Years of Experience in Commercial Banking at Bank of
+                        America </p>
+                    </div>
+                </a> <a class="font-class2" href="#">
+                    <div id="paragraphbox4" class="font-class">
+                        <div class="picturebox4"></div>
+                        <h3 class="business"> Philip Cooper </h3>
+                        <p class="inboxtext"> School: Ryerson University, Computer Engineering </p>
+                        <p class="inboxtext2"> Country: Canada </p>
+                        <p class="inboxtext3"> Main Qualification: 4 Years of Experience in Mobile Software Design at Apple</p>
+                    </div>
+                </a>
+                
+                <a class="font-class2" href="#">
+                    <div id="paragraphbox5" class="font-class">
+                        <div class="picturebox5"></div>
+                        <h3 class="business"> Gerald Richardson </h3>
+                        <p class="inboxtext"> School: Ontario Tech University, Mechanical Engineering</p>
+                        <p class="inboxtext2"> Country: Canada </p>
+                        <p class="inboxtext3"> Main Qualification: 12 month internship as a Design Engineer at Toyota </p>
+                    </div>
+                </a>
+                <a class="font-class2" href="#">
+                    <div id="paragraphbox3" class="font-class">
+                        <div class="picturebox3"></div>
+                        <h3 class="business"> Larry Butler </h3>
+                        <p class="inboxtext"> School: Ontario Tech University, Software Engineering </p>
+                        <p class="inboxtext2"> Country: Canada </p>
+                        <p class="inboxtext3"> Main Qualification: 6 months as a Software Engineer at Shopify </p>
+                    </div>
+                </a>
+                <a class="font-class2" href="#">
+                    <div id="paragraphbox7" class="font-class">
+                        <div class="picturebox7"></div>
+                        <h3 class="business"> Jeremy Ross </h3>
+                        <p class="inboxtext"> School: M.I.T, Computer Science</p>
+                        <p class="inboxtext2"> Country: US </p>
+                        <p class="inboxtext3"> Main Qualification: 4 Years as a Software Engineer at Netflix </p>
+                    </div>
+                </a>
+                <a class="font-class2" href="#">
             <div id="paragraphbox8" class="font-class">
                 <div class="picturebox8"></div>
                 <h3 class="business"> Carl Bryant </h3>
@@ -127,7 +131,9 @@
                 <p class="inboxtext3"> Main Qualification: 4 Years of Experience as a Reasearch Assistant at University
                     of Toronto </p>
             </div>
-        </a>
+        </a> -->
+        </div>
+
         <div id="filtertitle">
             <p class="font-class">Location</p>
         </div>

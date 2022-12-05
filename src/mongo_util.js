@@ -122,6 +122,35 @@ const getSession = async (username) => {
   return await collection.findOne({ username });
 }
 
+const getUserWithUsername = async (username) => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("users");
+  const query = { username };
+  return await collection.findOne(query);
+}
+
+const getUserWithSessionId = async (sessionId) => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("sessions");
+  const session = await collection.findOne({ sessionId });
+  if(session == null) {
+    return null;
+  }
+  const username = session.username;
+  const user = await getUserWithUsername(username);
+  return user;
+}
+
+const getJobs = async () => {
+  const client = await generateDb();
+  const db = client.db("SOFE2800U");
+  const collection = db.collection("jobs");
+  const jobs =  await collection.find({}).toArray();
+  return jobs;
+}
+
 module.exports = {
   insertUser,
   userExists,
@@ -129,4 +158,7 @@ module.exports = {
   login,
   sessionExists,
   getSession,
+  getUserWithUsername,
+  getUserWithSessionId,
+  getJobs,
 };

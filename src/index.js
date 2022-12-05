@@ -32,6 +32,19 @@ const initializeWebServer = () => {
     res.send(data);
   });
 
+  app.post('/get/user/username', async (req, res) => {
+    const { username } = req.body;
+    const user = await mongoUtil.getUserWithUsername(username);
+    res.send(user);
+  });
+
+  app.post('/get/user/sessionid', async (req, res) => {
+    const { sessionId } = req.body;
+    const user = await mongoUtil.getUserWithSessionId(sessionId);
+    console.log(user);
+    res.send(user);
+  });
+
   // checks if username exists in users collection
   app.post("/exists/user", async (req, res) => {
     console.log(req.body);
@@ -50,6 +63,11 @@ const initializeWebServer = () => {
       sessionExists,
       sessionId: await mongoUtil.getSession(username),
     });
+  });
+
+  app.post("/get/jobs", async (req,res) => {
+    const jobs = await mongoUtil.getJobs();
+    res.send(jobs);
   });
 };
 
