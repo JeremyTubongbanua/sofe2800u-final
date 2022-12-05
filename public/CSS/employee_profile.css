@@ -3,30 +3,6 @@ body {
   font-family: 'Kosugi', sans-serif;
   height: 100vh;
 }
-
-#menu {
-  list-style-type: none;
-  position: relative;
-  overflow: hidden;
-  background-color: #333;
-  margin: 0;
-}
-
-#menu > li {
-  float: left;
-}
-
-#menu > li > a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#menu > li > a:hover {
-  background-color: #111;
-}
   
 #profileBox{
   display: flex;
